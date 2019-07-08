@@ -3,7 +3,7 @@
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-150%, -150%);
+    transform: translate(-50%, -50%);
     height: 200px;
     width: 400px;
     background: #8ee8ff;;
@@ -11,6 +11,41 @@
   h1{
     text-align: center;
   }
-  p{
-    padding-left: 20px;
+  .exploretheworld {
+    /* FIX THIS: make only the text become gradient */
+    background:linear-gradient(to right, lightgreen , darkgreen);
+  }
+  .box {
+      border-style: solid;
+      width: 10%;
+  }
+  .banhammerdis {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 200px;
+    width: 400px;
+    background: #8ee8ff;;  
+  }
+  .zjokardis {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 200px;
+    width: 400px;
+    background: #8ee8ff;;
+  }
+  .nuofdis {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 200px;
+    width: 400px;
+    background: #8ee8ff;;
   }
