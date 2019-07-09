@@ -1,51 +1,61 @@
 .overlay {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 200px;
-    width: 400px;
-    background: #8ee8ff;;
-  }
-  h1{
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 200px;
+  width: 400px;
+  background: #8ee8ff;;
+}
+h1{
     text-align: center;
+}
+.box {
+  border-style: solid;
+  width: 10%;
+}
+.banhammerdis {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 200px;
+  width: 400px;
+  background: #8ee8ff;;  
+}
+.zjokardis {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 200px;
+  width: 400px;
+  background: #8ee8ff;;
   }
-  .exploretheworld {
-    /* FIX THIS: make only the text become gradient */
-    background:linear-gradient(to right, lightgreen , darkgreen);
+.nuofdis {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 200px;
+  width: 400px;
+  background: #8ee8ff;;
   }
-  .box {
-      border-style: solid;
-      width: 10%;
-  }
-  .banhammerdis {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 200px;
-    width: 400px;
-    background: #8ee8ff;;  
-  }
-  .zjokardis {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 200px;
-    width: 400px;
-    background: #8ee8ff;;
-  }
-  .nuofdis {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 200px;
-    width: 400px;
-    background: #8ee8ff;;
-  }
+.exploretheworld {
+  display: flex;
+  justify-content: center;
+  font-size:40px;
+}
+.exploretexts {
+  text-align: center;
+}
+.exploretexts {
+  margin: -20px -30px; 
+  position:relative;
+  top:50%; 
+  left:50%;
+}
