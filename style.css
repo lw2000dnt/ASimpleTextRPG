@@ -1,19 +1,46 @@
+h1{
+    text-align: center;
+}
+.exploreimage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+} 
+.box {
+  padding-left:10px;
+  margin: 10px;
+  border-style: solid;
+  width: 10%;
+  border-width: 2px;
+}
+.tutorial {
+  display:block;
+  margin-left: auto;
+  margin-right:auto;
+  position: relative;
+}
 .overlay {
   display: none;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 200px;
+  height: 150px;
   width: 400px;
-  background: #8ee8ff;;
+  background: #e4e4e4;
+  text-align: center;
 }
-h1{
-    text-align: center;
-}
-.box {
-  border-style: solid;
-  width: 10%;
+.mortemdis {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100px;
+  width: 400px;
+  background: #e4e4e4;
+  text-align: center;
 }
 .banhammerdis {
   display: none;
@@ -21,9 +48,10 @@ h1{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 200px;
+  height: 100px;
   width: 400px;
-  background: #8ee8ff;;  
+  background: #e4e4e4; 
+  text-align: center;
 }
 .zjokardis {
   display: none;
@@ -31,31 +59,43 @@ h1{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 200px;
+  height: 100px;
   width: 400px;
-  background: #8ee8ff;;
-  }
+  background: #e4e4e4;
+  text-align: center;
+}
 .nuofdis {
   display: none;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 200px;
+  height: 100px;
   width: 400px;
-  background: #8ee8ff;;
-  }
-.exploretheworld {
+  background: #e4e4e4;
+  text-align: center;
+}
+.fight {
+  position: relative;
+  text-align: center;
+}
+.exploretitle {
   display: flex;
   justify-content: center;
   font-size:40px;
 }
-.exploretexts {
-  text-align: center;
-}
-.exploretexts {
-  margin: -20px -30px; 
+#exploretexts {
+  border-style:solid;
+  border-width: 0.5px;
+  border-color:#e4e4e4);
   position:relative;
-  top:50%; 
-  left:50%;
+  text-align:center;
+  padding:10px;
+  width:70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#exploretextss {
+  position:relative;
+  text-align:center;
 }
