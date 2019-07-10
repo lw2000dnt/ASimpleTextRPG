@@ -99,3 +99,16 @@ h1{
   position:relative;
   text-align:center;
 }
+#exploretimer{
+  text-align: center;
+}
+progress {
+  text-align: center;
+}
+progress:after {
+  content: attr(value)'/1000';
+}
+.medium {
+  height:100px;
+  width:100px;
+}
