@@ -143,10 +143,6 @@ progress:after {
     margin-right: auto;
 }
 
-.yourhp {
-    position: fixed;
-}
+.yourhp {}
 
-.enemyhp {
-    padding-left: 400px;
-}
+.enemyhp {}
