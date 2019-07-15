@@ -136,6 +136,10 @@ progress:after {
     content: attr(value)'/1000';
 }
 
+progress:{
+    content: attr(value)'/100';
+}
+
 .medium {
     height: 100px;
     width: 100px;
@@ -143,6 +147,4 @@ progress:after {
     margin-right: auto;
 }
 
-.yourhp {}
 
-.enemyhp {}
