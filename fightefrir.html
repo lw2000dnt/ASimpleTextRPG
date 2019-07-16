@@ -25,8 +25,7 @@
                 <a class="nav-link" href="fight.html">Fight</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="store.html">Store</a>
-            </li>
+                <a class="nav-link" href="store.html">Store</a> </li>
             <li class="nav-item">
                 <a class="nav-link" href="inventory.html">Inventory</a>
             </li>
@@ -46,16 +45,16 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     <script src="main.js"></script>
-    <u class="exploretitle" style="text-decoration:none;text-align:center;background: -webkit-linear-gradient(0deg, #3bf8ff,#ff10d7);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;;">Exploring The World</u>
-    <img class="exploreimage" src="https://i.imgur.com/w1y00XB.png">
-    <p id="exploretexts"> You step into the world. What shall you do next?</p>
-    <div id="exploretextss">
-        <input type="button" onclick="getItem();explore(this);" value="Explore" />
-        <div class="exp">Your EXP<progress id="exp" max="100" value="0"></progress><br /></div>
-        <p id="expmessage"> You gained exp</p>
+    <h1>Fighting Efrir</h1>
+
+    <div class="medium">
+        <input type="button"
+            onclick="health.value-=1 + Math.floor(Math.random() * 10);npchealth.value-=1 + Math.floor(Math.random() * 10)"
+            value="Fight" />
+        <div class="yourhp">Your HP<progress id="health" max="1000" value="1000"></progress><br /></div>
+        <div class="enemyhp">Enemy HP<progress id="npchealth" max="1000" value="999"></progress><br /></div>
     </div>
+    </section>
 </body>
 
 </html>

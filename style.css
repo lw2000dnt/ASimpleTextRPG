@@ -17,6 +17,8 @@ h1 {
     border-width: 2px;
 }
 
+/* add secomd column */
+
 .tutorial {
     display: block;
     margin-left: auto;
@@ -84,6 +86,78 @@ h1 {
     text-align: center;
 }
 
+.efrirdis {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100px;
+    width: 400px;
+    background: #e4e4e4;
+    text-align: center;
+}
+
+.afwregdis {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100px;
+    width: 400px;
+    background: #e4e4e4;
+    text-align: center;
+}
+
+.sadghostdis {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100px;
+    width: 400px;
+    background: #e4e4e4;
+    text-align: center;
+}
+
+.angryghostdis {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100px;
+    width: 400px;
+    background: #e4e4e4;
+    text-align: center;
+}
+
+.golemdis {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100px;
+    width: 400px;
+    background: #e4e4e4;
+    text-align: center;
+}
+
+.nenhertdis {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100px;
+    width: 400px;
+    background: #e4e4e4;
+    text-align: center;
+}
+
 .fight {
     position: relative;
     text-align: center;
@@ -132,12 +206,8 @@ progress {
     text-align: center;
 }
 
-progress:after {
+progress::after {
     content: attr(value)'/1000';
-}
-
-progress:{
-    content: attr(value)'/100';
 }
 
 .medium {
