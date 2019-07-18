@@ -49,11 +49,8 @@
     <h1>Fighting Zjokar</h1>
 
     <div class="medium">
-        <input type="button"
-            onclick="health.value-=1 + Math.floor(Math.random() * 10);npchealth.value-=1 + Math.floor(Math.random() * 10)"
-            value="Fight" />
-        <div class="yourhp">Your HP<progress id="health" max="1000" value="1000" -webkit-progress-value { background:
-                blue; }></progress><br /></div>
+        <input type="button" onclick="fight();" value="Fight" />
+        <div class="yourhp">Your HP<progress id="health" max="1000" value="1000"></progress><br /></div>
         <div class="enemyhp">Enemy HP<progress id="npchealth" max="1000" value="1000"></progress><br /></div>
     </div>
     </section>

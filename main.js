@@ -60,7 +60,7 @@ $(document).ready(function () {
     });
 });
 // texts which will get displayed, currently at 38 texts
-var arr = ["Oooh, candy. You eat the candy and get dysentery.", "You run into a bear. It seems hungry.", "You see someone eating a pineapple pizza and slap it out of their hand.", "You spend days trying to think of a creative game idea. It doesn't work.", "You run into a strange man with some suspicious looking pills and a drink.",
+var arr = ["Oooh, candy. Yikes, it expired before you were even born.", "You run into a bear. It seems hungry.", "You see someone eating a pineapple pizza and slap it out of their hand.", "You spend days trying to think of a creative game idea. It doesn't work.", "You run into a strange man with some suspicious looking pills and a drink.",
     "You drop your sandwich. You're sad now.", "A tree throws an apple at you. Since when did trees throw apples?", "An orange man with a wig rants about how he wants to build a wall.", "A man deep fries a bucket.", "You hear screaming in the distance. Your neighbours must be arguing again.", "A large purple man kills half the people in your town.",
     "Why do you call your friend 'Two Armed Jerry'? Because he has no legs.", "A man dares you to run across a pile of Legos barefoot. You succeed, but what did it cost? Everything.", "You climb up a mountain. You've peaked in life, it's only downhill from here.", "What did the potato say to the man? I don't know, potatoes don't talk.",
     "You come across a dark cave. That totally looks safe.", "You wonder to yourself 'What's the real purpose of this game?'", "A tree falls in the distance. It doesn't make any sound.", "All this aimless wandering is making you hungry. You decide to eat some delicious air.", "The cake is a lie!", "A flying spider is terrorizing your town. You decide now would be a good time to help everyone and rob the town bank.",
@@ -80,9 +80,31 @@ function explore(obj) {
         obj.disabled = false;
     }, 1500);
 }
-// var health = document.getElementById("health");
-// function (){
-//    if (health < 900) {
-//        alert("You died :c");
-//    }
-// }
+// level up message in explore
+function myFunction() {
+    var myexp = document.getElementById("exp").value;
+    if (myexp > 99.99) {
+        document.getElementById("message").innerHTML = "Congrats! You levelled up!";
+        alert("Congrats! You levelled up!")
+    }
+}
+// fighting mechanics
+function fight() {
+    health.value -= 1 + Math.floor(Math.random() * 10);
+    npchealth.value -= 1 + Math.floor(Math.random() * 10);
+}
+function kill() {
+    var myhealth = document.getElementById("health").value;
+    if (myhealth < 990) {
+    document.getElementById("udead").innerHTML = "You died! :c";
+        alert("Oh no! You died! :c")
+    }
+}
+function killing() {
+    var mynpchealth = document.getElementById("npchealth").value;
+    if (mynpchealth < 990) {
+    document.getElementById("dead").innerHTML = "You won!";
+        alert("Congrats! You won the fight!")
+    }
+}
+
