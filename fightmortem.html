@@ -48,10 +48,13 @@
     <h1>Fighting Mortem</h1>
 
     <div class="medium">
-        <input type="button" onclick="fight();kill();killing();" value="Fight" />
+        <input id="fighting" type="button" onclick="fight();kill();killing();" value="Fight" />
         <div class="yourhp">Your HP<progress id="health" max="1000" value="1000"></progress><br /></div>
         <div class="enemyhp">Enemy HP<progress id="npchealth" max="1000" value="1000"></progress><br /></div>
     </div>
+    <p id="udead"></p>
+    <p id="dead"></p>
+    <a href="fight.html"><button>Go Back</button></a>
     </section>
 </body>
 

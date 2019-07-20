@@ -81,11 +81,12 @@ function explore(obj) {
     }, 1500);
 }
 // level up message in explore
-function myFunction() {
+function expvalues() {
     var myexp = document.getElementById("exp").value;
     if (myexp > 99.99) {
         document.getElementById("message").innerHTML = "Congrats! You levelled up!";
-        alert("Congrats! You levelled up!")
+        alert("Congrats! You levelled up!");
+        gold.value += 1 + 10;
     }
 }
 // fighting mechanics
@@ -95,16 +96,22 @@ function fight() {
 }
 function kill() {
     var myhealth = document.getElementById("health").value;
-    if (myhealth < 990) {
-    document.getElementById("udead").innerHTML = "You died! :c";
-        alert("Oh no! You died! :c")
+    if (myhealth < 1) {
+        document.getElementById("udead").innerHTML = "You died! :c";
+        alert("Oh no! You died! :c");
+        document.getElementById("fighting").disabled = true;
     }
 }
 function killing() {
     var mynpchealth = document.getElementById("npchealth").value;
-    if (mynpchealth < 990) {
-    document.getElementById("dead").innerHTML = "You won!";
-        alert("Congrats! You won the fight!")
+    if (mynpchealth < 1) {
+        document.getElementById("dead").innerHTML = "You won! :D";
+        alert("Congrats! You won the fight!");
+        document.getElementById("fighting").disabled = true;
     }
 }
 
+function getItem() {
+    var plevel = document.getElementById("playerlevel").value;
+    var pgold = document.getElementById("playergold").value;
+}
