@@ -233,3 +233,12 @@ progress {
     margin-left: auto;
     margin-right: auto;
 }
+h2 {
+    font-size: 25px;
+}
+#playerlevel {
+    width: 10%;
+}
+#playergold {
+    width: 10%;
+}

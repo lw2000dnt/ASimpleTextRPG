@@ -72,21 +72,30 @@ var arr = ["Oooh, candy. Yikes, it expired before you were even born.", "You run
 function getItem() {
     document.getElementById("exploretexts").innerHTML = arr[Math.floor(Math.random() * arr.length)];
     exp.value += 1 + Math.floor(Math.random() * 10);
+    console.log(exp)
 }
 // greys out the explore button for 1.5 seconds to prevent spamming
 function explore(obj) {
     obj.disabled = true;
     setTimeout(function () {
         obj.disabled = false;
-    }, 1500);
+    }, 1000);
 }
-// level up message in explore
+// level up stuff, a is reset exp, b is level, c is gold
+b = 1;
+c = 0;
 function expvalues() {
     var myexp = document.getElementById("exp").value;
     if (myexp > 99.99) {
-        document.getElementById("message").innerHTML = "Congrats! You levelled up!";
         alert("Congrats! You levelled up!");
-        gold.value += 1 + 10;
+        a = 0;
+        document.getElementById('exp').value = a;
+        b += 1;
+        document.getElementById('playerlevel').value = b;
+        console.log(b);
+        c += 50 + Math.floor(Math.random() * 50);
+        document.getElementById('playergold').value = c;
+        console.log(c);
     }
 }
 // fighting mechanics
@@ -109,9 +118,4 @@ function killing() {
         alert("Congrats! You won the fight!");
         document.getElementById("fighting").disabled = true;
     }
-}
-
-function getItem() {
-    var plevel = document.getElementById("playerlevel").value;
-    var pgold = document.getElementById("playergold").value;
 }
