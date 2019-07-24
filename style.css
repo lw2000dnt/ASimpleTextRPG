@@ -6,7 +6,7 @@ h1 {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
+    width: 60%;
 }
 
 .box {
@@ -188,7 +188,7 @@ h1 {
     position: relative;
     text-align: center;
     padding: 10px;
-    width: 70%;
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
 }

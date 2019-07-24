@@ -56,10 +56,27 @@
         <div class="exp">Your EXP<progress id="exp" max="100" value="0"></progress></div>
         <p id="message"></p>
     </div>
-    <h2 id="playerlevels">Level:<input type="text" id="playerlevel" value="1" disabled></input>
+    <h2 id="playerlevels">
+        <input placeholder="Level" id="playerlevel" disabled></input>
+        <input id="playerlevelvalue" value="1" disabled></input>
     </h2>
-    <h2 id="playergolds">Gold:<input type="text" id="playergold" value="0" disabled></input>
+    <h2 id="playergolds">
+        <input placeholder="Gold" id="playergold" disabled></input>
+        <input id="playergoldvalue" value="0" disabled></input>
     </h2>
+    <input type="button" onclick="saveprogress();" value="Save Progress">
 </body>
 
 </html>
+<!-- if (myexp > 99.99) {
+    alert("Congrats! You levelled up!");
+    a = 0;
+    document.getElementById('exp').value = a;
+    var b = localStorage.getItem('Level');
+    b += 1;
+    document.getElementById('playerlevelvalue').value = b;
+    console.log(b);
+    var c = localStorage.getItem('Gold');
+    c += 50 + Math.floor(Math.random() * 50);
+    document.getElementById('playergoldvalue').value = c;
+    console.log(c); -->
