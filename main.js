@@ -71,7 +71,7 @@ var arr = ["Oooh, candy. Yikes, it expired before you were even born.", "You run
 // function picks ranfom text from array and user gains a random amount of exp from 1 to 10
 function getItem() {
     document.getElementById("exploretexts").innerHTML = arr[Math.floor(Math.random() * arr.length)];
-    exp.value += 1 + Math.floor(Math.random() * 10);
+    exp.value += 1 + Math.floor(Math.random() * 1256470);
     console.log(exp)
 }
 // greys out the explore button for 1.5 seconds to prevent spamming
