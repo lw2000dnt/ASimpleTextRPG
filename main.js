@@ -104,6 +104,25 @@ function fight() {
     health.value -= 1 + Math.floor(Math.random() * 10);
     npchealth.value -= 1 + Math.floor(Math.random() * 10);
 }
+function heal() {
+    health.value += 10;
+    heals.value -= 1;
+    var healsleft = document.getElementById("heals").value;
+    if (healsleft < 1) {
+        document.getElementById("healing").disabled = true;
+    }
+}
+
+function ssword() {
+    health.value -= 1 + Math.floor(Math.random() * 10);
+    npchealth.value -= 10 + Math.floor(Math.random() * 50);
+    swords.value -= 1;
+    var swordsleft = document.getElementById("swords").value;
+    if (swordsleft < 1) {
+        document.getElementById("swordswing").disabled = true;
+    }
+}
+
 function kill() {
     var myhealth = document.getElementById("health").value;
     if (myhealth < 1) {
@@ -119,9 +138,4 @@ function killing() {
         alert("Congrats! You won the fight!");
         document.getElementById("fighting").disabled = true;
     }
-}
-function saveprogress() {
-    console.log('click')
-    document.getElementById("playerlevelvalue").value = localStorage.setItem('Level', '324');
-    document.getElementById("playergoldvalue").value = localStorage.setItem('Gold', '23');
 }

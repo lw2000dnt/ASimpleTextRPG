@@ -10,14 +10,13 @@ h1 {
 }
 
 .box {
-    padding-left: 10px;
+    padding-left: 15px;
     margin: 10px;
     border-style: solid;
-    width: 10%;
+    width: 18.5%;
     border-width: 2px;
+    float: left;
 }
-
-/* add secomd column */
 
 .tutorial {
     display: block;
@@ -218,11 +217,32 @@ progress {
     content: attr(value)'/100';
 }
 
+#heals::after {
+    content: attr(value)'/10';
+}
+
+#swords::after {
+    content: attr(value)'/3';
+}
+
+
 .medium {
     height: 100px;
     width: 100px;
     margin-left: auto;
     margin-right: auto;
+}
+
+#fighting {
+    margin-bottom: 10px;
+}
+
+#healing {
+    margin-bottom: 10px;
+}
+
+#swordswing {
+    margin-bottom: 10px;
 }
 
 #udead {
@@ -233,6 +253,12 @@ progress {
     margin-left: auto;
     margin-right: auto;
 }
+
+#goback {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 h2 {
     font-size: 25px;
 }
