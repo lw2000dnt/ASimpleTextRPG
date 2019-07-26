@@ -104,6 +104,22 @@ function fight() {
     health.value -= 1 + Math.floor(Math.random() * 10);
     npchealth.value -= 1 + Math.floor(Math.random() * 10);
 }
+
+function banhfight() {
+    health.value -= 2 + Math.floor(Math.random() * 10);
+    npchealth.value -= 1 + Math.floor(Math.random() * 10);
+}
+
+function zjokarfight() {
+    health.value -= 10 + Math.floor(Math.random() * 35);
+    npchealth.value -= 3 + Math.floor(Math.random() * 15);
+}
+
+function nuoffight() {
+    health.value -= 1 + Math.floor(Math.random() * 35);
+    npchealth.value -= 10 + Math.floor(Math.random() * 20);
+}
+
 function heal() {
     health.value += 10;
     heals.value -= 1;
@@ -115,6 +131,46 @@ function heal() {
 
 function ssword() {
     health.value -= 1 + Math.floor(Math.random() * 10);
+    npchealth.value -= 20 + Math.floor(Math.random() * 50);
+    swords.value -= 1;
+    var swordsleft = document.getElementById("swords").value;
+    if (swordsleft < 1) {
+        document.getElementById("swordswing").disabled = true;
+    }
+}
+
+function nuofssword() {
+    health.value -= 1 + Math.floor(Math.random() * 10);
+    npchealth.value -= 10 + Math.floor(Math.random() * 50);
+    swords.value -= 1;
+    var swordsleft = document.getElementById("swords").value;
+    if (swordsleft < 1) {
+        document.getElementById("swordswing").disabled = true;
+    }
+}
+
+function banhssword() {
+    health.value -= 2 + Math.floor(Math.random() * 10);
+    npchealth.value -= 10 + Math.floor(Math.random() * 50);
+    swords.value -= 1;
+    var swordsleft = document.getElementById("swords").value;
+    if (swordsleft < 1) {
+        document.getElementById("swordswing").disabled = true;
+    }
+}
+
+function banhfball() {
+    health.value -= 1 + Math.floor(Math.random() * 10);
+    npchealth.value -= 100 + Math.floor(Math.random() * 150);
+    fballs.value -= 1;
+    var fballsleft = document.getElementById("fballs").value;
+    if (fballsleft < 1) {
+        document.getElementById("fireball").disabled = true;
+    }
+}
+
+function zjokarssword() {
+    health.value -= 10 + Math.floor(Math.random() * 35);
     npchealth.value -= 10 + Math.floor(Math.random() * 50);
     swords.value -= 1;
     var swordsleft = document.getElementById("swords").value;
@@ -129,13 +185,59 @@ function kill() {
         document.getElementById("udead").innerHTML = "You died! :c";
         alert("Oh no! You died! :c");
         document.getElementById("fighting").disabled = true;
+        document.getElementById("healing").disabled = true;
+        document.getElementById("swordswing").disabled = true;
+        document.getElementById("gun").disabled = true;
+        document.getElementById("shield").disabled = true;
+        document.getElementById("fireball").disabled = true;
     }
 }
+
 function killing() {
     var mynpchealth = document.getElementById("npchealth").value;
     if (mynpchealth < 1) {
         document.getElementById("dead").innerHTML = "You won! :D";
         alert("Congrats! You won the fight!");
         document.getElementById("fighting").disabled = true;
+        document.getElementById("healing").disabled = true;
+        document.getElementById("swordswing").disabled = true;
+        document.getElementById("gun").disabled = true;
+        document.getElementById("shield").disabled = true;
+        document.getElementById("fireball").disabled = true;
+    }
+}
+
+function ofight() {
+    health.value -= 10 + Math.floor(Math.random() * 30);
+    npchealth.value -= 1 + Math.floor(Math.random() * 10);
+}
+
+function sssword() {
+    health.value -= 10 + Math.floor(Math.random() * 30);
+    npchealth.value -= 25 + Math.floor(Math.random() * 50);
+    swords.value -= 1;
+    var swordsleft = document.getElementById("swords").value;
+    if (swordsleft < 1) {
+        document.getElementById("swordswing").disabled = true;
+    }
+}
+
+function gunboom() {
+    health.value -= 10 + Math.floor(Math.random() * 30);
+    npchealth.value -= 30 + Math.floor(Math.random() * 50);
+    guns.value -= 1;
+    var shotsleft = document.getElementById("guns").value;
+    if (shotsleft < 1) {
+        document.getElementById("gun").disabled = true;
+    }
+}
+
+function shields() {
+    health.value -= 1 + Math.floor(Math.random() * 5);
+    npchealth.value -= 40 + Math.floor(Math.random() * 45);
+    shieldbash.value -= 1;
+    var shieldsleft = document.getElementById("shieldbash").value;
+    if (shieldsleft < 1) {
+        document.getElementById("shield").disabled = true;
     }
 }

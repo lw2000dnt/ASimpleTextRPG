@@ -40,19 +40,31 @@
     <h1>Fighting Mortem</h1>
 
     <div class="medium">
-        <input id="fighting" type="button" onclick="fight();kill();killing();" value="Punch" />
+        <input id="fighting" type="button" onclick="ofight();kill();killing();" value="Punch" />
         <input id="healing" type="button" onclick="heal();kill();killing();" value="Heal" />
-        <input id="swordswing" type="button" onclick="ssword();kill();killing();" value="Swing Sword" />
-        <div class="yourhp"> Your HP <progress id="health" max="1000" value="1000"></progress><br /></div>
-        <div class="enemyhp"> Enemy HP <progress id="npchealth" max="1000" value="1000"></progress><br /></div>
-        <div class="enemyhp"> Heals <progress id="heals" max="10" value="10"></progress><br /></div>
-        <div class="enemyhp"> Sword Swings <progress id="swords" max="3" value="3"></progress><br /></div>
+        <input id="swordswing" type="button" onclick="sssword();kill();killing();" value="Sword Swing" />
+        <input id="gun" type="button" onclick="gunboom();kill();killing();" value="Shoot" />
+        <input id="shield" type="button" onclick="shields();kill();killing();" value="Shield Bash" />
+        <div class="mortem"> Your HP <progress id="health" max="1000" value="1000"></progress><br /></div>
+        <div class="mortem"> Enemy HP <progress id="npchealth" max="1000" value="1000"></progress><br /></div>
+        <div class="mortem"> Heals <progress id="heals" max="15" value="15"></progress><br /></div>
+        <div class="mortem"> Sword Swings <progress id="swords" max="5" value="5"></progress><br /></div>
+        <div class="mortem"> Bullets <progress id="guns" max="5" value="5"></progress><br /></div>
+        <div class="mortem"> Shield Bashes <progress id="shieldbash" max="4" value="4"></progress><br /></div>
         <a href="fight.html"><button>Go Back</button></a>
     </div>
-
+    <div class="info">
+        <h2>Information:</h2>
+        <p>Enemy Attack: Hits for 10 to 30 damage</p>
+        <p>Punch: Deals 1 to 10 damage</p>
+        <p>Heal: Heals 10 HP</p>
+        <p>Sword Swing: Deals 25 to 50 damage</p>
+        <p>Shoot: Deals 30 to 50 damage</p>
+        <p>Shield Bash: Deals 40 to 45 damage, reduces enemy attack to 1 to 5 damage</p>
+    </div>
     <p id="udead"></p>
     <p id="dead"></p>
-   
+
     </section>
 </body>
 

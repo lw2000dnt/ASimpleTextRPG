@@ -213,6 +213,18 @@ progress {
     content: attr(value)'/1000';
 }
 
+.banh #npchealth::after {
+    content: attr(value)'/2000';
+}
+
+.zjokar #npchealth::after {
+    content: attr(value)'/500';
+}
+
+.nuof #npchealth::after {
+    content: attr(value)'/1200';
+}
+
 #exp::after {
     content: attr(value)'/100';
 }
@@ -221,10 +233,33 @@ progress {
     content: attr(value)'/10';
 }
 
-#swords::after {
-    content: attr(value)'/3';
+.mortem #heals::after {
+    content: attr(value)'/15';
 }
 
+.banh #swords::after {
+    content: attr(value)'/10';
+}
+
+.banh #fballs::after {
+    content: attr(value)'/5';
+}
+
+.zjokar #swords::after {
+    content: attr(value)'/4';
+}
+
+#swords::after {
+    content: attr(value)'/5';
+}
+
+#guns::after {
+    content: attr(value)'/5';
+}
+
+#shieldbash::after {
+    content: attr(value)'/4';
+}
 
 .medium {
     height: 100px;
@@ -245,10 +280,15 @@ progress {
     margin-bottom: 10px;
 }
 
+#gun {
+    margin-bottom: 10px;
+}
+
 #udead {
     margin-left: auto;
     margin-right: auto;
 }
+
 #dead {
     margin-left: auto;
     margin-right: auto;
